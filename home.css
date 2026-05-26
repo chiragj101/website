@@ -169,8 +169,6 @@ nav{
         opacity: 1;
     }
 }
-/* PROJECT SECTION */
-
 #projects{
     width: 92%;
 
@@ -181,101 +179,88 @@ nav{
 
     gap: 60px;
 }
-
-/* PROJECT CARD */
-
 .pro{
     display: flex;
     flex-direction: row;
-
     align-items: center;
-
     gap: 25px;
-
-    background: #151114;
-
+    background: transparent;
     border-radius: 16px;
-
     overflow: hidden;
-
     padding: 18px;
-
     transition: 
     transform 0.4s ease,
     box-shadow 0.4s ease;
-
     max-width: 950px;
-
     margin: auto;
 }
-
-/* HOVER EFFECT */
-
 .pro:hover{
     transform: translateY(-5px);
-
     box-shadow: 
     0 12px 35px rgba(0,0,0,0.4);
 }
-
-/* PROJECT IMAGE */
 .promage{
     width: 280px;
     height: 190px;
-
     object-fit: cover;
-
     border-radius: 12px;
-
     flex-shrink: 0;
-
     transition: transform 0.5s ease;
 }
-
-/* IMAGE ZOOM */
-
 .pro:hover .promage{
     transform: scale(1.03);
 }
-
-/* TITLE */
-
 .pro p:nth-child(2){
     color: white;
-
     font-size: 22px;
     font-weight: 600;
-
     font-family: 'Poppins', sans-serif;
-
     margin-bottom: 10px;
 }
-
-/* DESCRIPTION */
-
 .pro p:nth-child(3){
     color: #9d9d9d;
-
     font-size: 14px;
-
     line-height: 1.7;
-
     font-family: 'Poppins', sans-serif;
-
     max-width: 500px;
 }
-/* MOBILE */
-
 @media(max-width: 900px){
-
     .pro{
         flex-direction: column;
         align-items: flex-start;
     }
-
     .promage{
         width: 100%;
         height: 280px;
     }
+}
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #121018;
+    color: #ccc;
+    text-align: center;
+    padding: 32px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+.footer button:hover {
+    transform: scale(1.1);
+}
 
+.footer button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+@media (max-width: 600px) {
+    .footer {
+        padding: 24px 16px;
+        font-size: 13px;
+    }
 }
